@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { Navlinks } from "@/constants/data";
-import { Button } from "../ui/button";
+import Link from "next/link";
 import { GranolaLogo } from "../icons";
-import { granolaFont } from "@/app/fonts/fonts";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (

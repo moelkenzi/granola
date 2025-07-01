@@ -1,7 +1,7 @@
 import { FooterLink1, FooterLink2, FooterLink3 } from "@/constants/data";
+import Link from "next/link";
 import { Apple, ArrowRight, GranolaSingleLogo, IPhone, Linkedin, X } from "../icons";
 import { Button } from "../ui/button";
-import Link from "next/link";
 
 const Footer = () => {
   return (
