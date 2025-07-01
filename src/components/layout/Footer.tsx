@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
-    <footer className="px-6 lg:pt-8 pb-4 flex flex-col gap-8 w-full tracking-[0.01em] text-secondary mt-auto bg-neutral-50">
+    <footer className="px-6 lg:pt-8 pb-4 flex flex-col gap-8 w-full tracking-[0.01em] mt-auto bg-neutral-50 ">
       <section className="flex overflow-visible relative flex-col items-center py-16 w-full sm:px-6 md:py-24 lg:py-20 lg:px-8 lg:max-w-6xl gap-8 justify-center px-0 mx-auto max-w-7xl text-center lg:gap-8">
         <div className="flex flex-col col-span-full gap-4 mx-auto max-w-2xl text-center lg:gap-8">
           <h2 className="text-3xl lg:text-5xl font-black tracking-[-0.015em] leading-[0.95] text-balance text-brand">

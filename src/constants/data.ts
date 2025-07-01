@@ -5,7 +5,7 @@ export const Navlinks = [
   },
   {
     link: "Blog",
-    href: "/#",
+    href: "/blog",
   },
   {
     link: "Careers",

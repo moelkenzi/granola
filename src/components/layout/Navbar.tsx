@@ -1,6 +1,6 @@
 import { Navlinks } from "@/constants/data";
 import Link from "next/link";
-import { GranolaLogo } from "../icons";
+import { GranolaLogo, Hamburger } from "../icons";
 import { Button } from "../ui/button";
 
 const Navbar = () => {
@@ -16,23 +16,28 @@ const Navbar = () => {
               <li key={link.link} className="flex">
                 <Link
                   href={link.href}
-                  className={`hidden select-none px-3 md:flex group items-center font-medium transition-all py-1.5 rounded-full border flex-none undefined hover:bg-black/5 border-transparent text-[rgb(106_108_106)] `}>
+                  className={`hidden select-none px-3 md:flex group items-center font-bold transition-all py-1.5 rounded-full border flex-none undefined hover:bg-black/5 border-transparent text-[rgb(106_108_106)] `}>
                   {link.link}
                 </Link>
               </li>
             ))}
           </ul>
-          <Button
-            variant={"sm"}
-            className={`text-[16px] hover:bg-[#80EE68] text-black bg-[#94f27f]`}>
-            <Link href="/" className={`font-gran`}>
-              <span className="mr-1"></span>
-              Download
-            </Link>
-          </Button>
+          <div className="flex items-center justify-center">
+            <Button
+              variant={"sm"}
+              className={`text-[16px] hover:bg-[#80EE68] text-black bg-[#94f27f]`}>
+              <Link href="/" className="font-bold">
+                <span className="mr-1"></span>
+                Download
+              </Link>
+            </Button>
+            <button className="p-2 md:hidden transition-all">
+              <Hamburger />
+            </button>
+          </div>
         </div>
         <p
-          className={`flex absolute left-[25%] top-11 items-center justify-center mt-2 text-gray-400 text-sm`}>
+          className={`absolute left-[25%] top-11 items-center justify-center mt-2 text-gray-400 text-sm hidden md:block`}>
           the navbar needs some enhancement
         </p>
       </nav>

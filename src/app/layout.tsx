@@ -16,9 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${granolaFont.variable} font-sans antialiased`}>
+      <body className={`${granolaFont.variable} font-sans antialiased  text-black`}>
         <Navbar />
-        {children}
+        <main className="min-h-screen grid">
+          {/* <div className="overflow-visible absolute inset-0 select-none z-[-1] opacity-60 rotate-180 bg-[radial-gradient(at_53%_78%,rgba(255,255,0,0.3)_0px,transparent_50%),radial-gradient(at_71%_91%,rgba(51,255,0,0.3)_0px,transparent_50%),radial-gradient(at_31%_91%,rgba(255,128,0,0.17)_0px,transparent_50%)]"></div> */}
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
